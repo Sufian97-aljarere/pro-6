@@ -1,0 +1,188 @@
+body {
+    background: linear-gradient(90deg,rgb(83, 2, 83),rgb(127, 33, 133));
+}
+
+.flex {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto
+}
+
+@media (max-width:991.98px) {
+    .padding {
+        padding: 1.5rem
+    }
+}
+
+@media (max-width:767.98px) {
+    .padding {
+        padding: 1rem
+    }
+}
+
+.padding {
+    padding: 2rem;
+    padding-top: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -ms-box-shadow: none;
+  
+    
+   
+}
+
+.pl-3,
+.px-3 {
+    padding-left: 1rem !important
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid #d2d2dc;
+    border-radius: 10px;
+    
+}
+
+.pr-3,
+.px-3 {
+    padding-right: 1rem !important
+}
+
+.card .card-body {
+    padding: .75rem 1.75rem
+}
+
+.card-body {
+    flex: 1 1 auto;
+    padding: 1.25rem;
+}
+
+.card .card-title {
+    color: #e35222;
+    margin-bottom: 1.625rem;
+    text-transform: capitalize;
+    font-size: 1.80rem;
+    font-weight: 700;
+    font-family: sans-serif; 
+}
+
+
+.add-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 30px;
+    margin-bottom: 25px;
+    background: #edeef0;  
+}
+
+
+.add-items input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-weight: 14px;
+   
+}
+
+.form-control {
+    border: 1px solid #f3f3f3;
+    font-weight: 400;
+    font-size: 0.875rem
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 0.875rem 1.375rem;
+    font-size: 1rem;
+    line-height: 1;
+    color: #57494b;
+    background-color: #ffffff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 30px;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out
+}
+
+
+button {
+    padding: 16px 40px;
+    background-color: #e35222;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 40px;
+}
+
+.list-wrapper {
+    height: 100%;
+    max-height: 100%
+}
+
+ul li {
+    list-style: none;
+    font-size: 17px;
+    padding: 10px 8px 10px 0px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+
+ul li::before{
+    content: "";
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background: url(img/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 6px;
+    left: -40px;
+}
+
+ul li.cheched{
+    color: #555;
+    text-decoration: line-through;
+}
+
+ul li.cheched::before{
+    background: url(img/checked.png);
+    background-size: cover;
+    background-position: center;
+}
+
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 30px;
+    height: 40px;
+    font-size: 30px;
+    color: #e35222;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 30%;
+}
+
+ul li span:hover{
+    background-color: #748f58;
+}
